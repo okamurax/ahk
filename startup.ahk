@@ -77,9 +77,6 @@ sc07B & r::Send "#r"
 
 ;--------------------------------------------------------
 				
-;sc079 & RShift::Send "#{Tab}"
-;sc079 & 1::Send "#^{Left}"
-;sc079 & 2::Send "#^{Right}"
 sc079 & 3::Send "^{Home}"
 sc079 & 4::Send "^{End}"
 
@@ -95,6 +92,7 @@ sc079 & d::Send "^+t" ; 再び開く
 sc079 & f::Send "^{F5}" ; 更新
 
 sc079 & z::Send "!+z" ; Alt+Shift+Z / CloseRightTabs
+sc079 & x::Send "^+{PgUp}" ; 前にタブ移動
 
 sc079 & ^::Send "!{^}" ; Greenshot
 sc079 & \::Send "!{\}" ; Greenshot
@@ -165,20 +163,13 @@ sc079 & v::
   }
 }
 
-sc079 & Left::Send "#^{Left}"
-sc079 & Right::Send "#^{Right}"
-
 ;--------------------------------------------------------
 
-;sc079 & WheelUp::Send "{PgUp}"
-;sc079 & WheelDown::Send "{PgDn}"
-
-sc079 & WheelUp::Send "^+{PgUp}" ; 前のタブ
-sc079 & WheelDown::Send "^+{PgDn}" ; 次のタブ
+sc079 & WheelUp::Send "{PgUp}"
+sc079 & WheelDown::Send "{PgDn}"
 
 +WheelUp::WheelLeft
 +WheelDown::WheelRight
-
 
 ;--------------------------------------------------------
 
